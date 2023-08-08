@@ -28,15 +28,25 @@ class Criarconta(FormView):
 
 
 O projeto contém as seguintes rotas:
-class Homepage(FormView):
-A unica página disponível para usuários não logados ela contém formulário de email se o email existir ele faz login e é redirecionado para a pagina homefilmes caso contrário ele será redirecionado para Criarconta.
-class Homefilmes(LoginRequiredMixin, ListView):
-Essa página fará a exibição dos filmes em uma forma variada de lista de filmes como por exemplo os filmes mais assistidos e os filmes mais novos.
-class Detalhesfilme(LoginRequiredMixin, DetailView):
-Vai exibir o detalhe de cada filme disponível nas listas de filmes o usuário poderá ver o video do filme e exibirá uma lista de filmes semelhantes.
-class Pesquisarfilme(LoginRequiredMixin, ListView):
+# class Homepage(FormView):
+A unica página disponível para usuários não logados ela contém formulário de email 
+se o email existir ele faz login e é redirecionado para a pagina homefilmes caso contrário 
+ele será redirecionado para Criarconta.
+
+# class Homefilmes(LoginRequiredMixin, ListView):
+Essa página fará a exibição dos filmes em uma forma variada de lista de filmes
+como por exemplo os filmes mais assistidos e os filmes mais novos.
+
+# class Detalhesfilme(LoginRequiredMixin, DetailView):
+Vai exibir o detalhe de cada filme disponível nas listas de filmes o usuário poderá ver o video do filme
+e exibirá uma lista de filmes semelhantes.
+
+# class Pesquisarfilme(LoginRequiredMixin, ListView):
 Se o filme existir ele fará a exibição do video caso o filme não exista ele retornará None.
-class Editarpagina(LoginRequiredMixin, UpdateView):
-O usuário poderá editar as informações dele nos campos = 'first_name', 'last_name', 'email' existe uma outra classe para trocar de senha.
-class Criarconta(FormView):
+
+# class Editarpagina(LoginRequiredMixin, UpdateView):
+O usuário poderá editar as informações dele nos campos = 'first_name', 'last_name', 'email'
+existe uma outra classe para trocar de senha.
+
+# class Criarconta(FormView):
 O usuário poderá criar uma nova conta.
